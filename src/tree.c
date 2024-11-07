@@ -294,7 +294,7 @@ void * tree_get_ref(const tree * tree, void * key) {
 
 
 
-tree_node * tree_set(tree * tree, void * key, void * data) {
+int tree_set(tree * tree, void * key, void * data) {
 
     int ret;
 
@@ -307,13 +307,13 @@ tree_node * tree_set(tree * tree, void * key, void * data) {
     //if a node already exists for this key, update its value
     if (eval == EQUAL) {
         memcpy(node->data, data, tree->data_size);
-        return node;
+        return 0;
 
     //else create a new node
     } else { 
         ret = _add_node(tree, key, data, node, eval);
-        if (ret == -1) return NULL;
-        return new_node;
+        if (ret == -1) return -1;
+        return 0;
     }
 }
 

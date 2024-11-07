@@ -3,7 +3,7 @@
 #include "error.h"
 
 
-__thread int error_code;
+int error_code;
 
 
 void get_error() {

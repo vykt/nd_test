@@ -1,13 +1,13 @@
 #ifndef ERROR_H
 #define ERROR_H
 
-extern __thread int error_code;
+
+extern int error_code;
 
 void get_error();
-const char * get_error_msg(const int error_num);
 
 
-// [error codes]
+// --- ERROR CODES ---
 
 // 1XX - user errors
 #define ERR_USER_KEY         100

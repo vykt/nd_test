@@ -1,3 +1,9 @@
+
+#
+# Unfinished template
+#
+
+
 .RECIPEPREFIX:=>
 
 # This makefile takes the following variables:

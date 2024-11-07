@@ -1,3 +1,9 @@
+
+#
+# Unfinished template
+#
+
+
 .RECIPEPREFIX:=>
 
 CC=gcc

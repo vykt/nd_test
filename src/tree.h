@@ -36,7 +36,7 @@ typedef struct {
 
 int tree_get_val(const tree * tree, void * key, void * buf);
 void * tree_get_ref(const tree * tree, void * key);
-tree_node * tree_set(tree * tree, void * key, void * data);
+int tree_set(tree * tree, void * key, void * data);
 int tree_remove(tree * tree, void * key);
 
 void new_tree(tree * tree, 
